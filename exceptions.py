@@ -1,0 +1,3 @@
+class TooManyWordsException(Exception):
+    pass
+    
