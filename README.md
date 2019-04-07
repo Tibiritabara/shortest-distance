@@ -13,5 +13,7 @@ where the build-arg text_file is the name of the file that will be read.
 The tests can be launched with the help of pytest. All of the project dependencies are easily installed with the help of pipenv.
 1. Install Pipenv if you don't have it already ([download here](https://pipenv.readthedocs.io/en/latest/)): $`pip install --user pipenv`
 2. then run `pipenv install` on the project folder. This will create a virtual environment with all of the dependencies inside.
-3. Run `PIPENV_DOTENV_LOCATION=.env.test pipenv run pytest -q tests.py` in order to override
-the .env file and use the testing configuration.
+3. Run `PIPENV_DOTENV_LOCATION=.env.test pipenv run pytest -q tests.py` in order to override the .env file and use the testing configuration.
+
+## Additional notes
+If you want to run the project locally please create the `.env` file by copying the `.env.dist` available in the project. This will setup the env variable `TEXT_FILE` to load the right file searching for the words. To run the project please be sure to use `pipenv run python main.py {first_word} {final_word}` to load the .env contents.

@@ -110,3 +110,4 @@ venv.bak/
 cache/*.jpg
 cache/*.tif
 cache/generated/*.jpg
+.vscode
