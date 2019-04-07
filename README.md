@@ -1,4 +1,4 @@
-# Shorter distance between words
+# Shortest distance between words
 The goal of this project is to allow the user to find the shortest distance between words given a text file.
 This was built using python and docker to ease the project execution.
 
