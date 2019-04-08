@@ -2,6 +2,7 @@
 Set of methods and classes to execute the text operations.
 """
 import logging
+import re
 from typing import List, Optional
 
 
@@ -48,5 +49,6 @@ class Finder:
         textfile = open(self.filename, "r")
         text: str = textfile.read()
         textfile.close()
+        text = re.sub("[,.]", "", text)
         word_list: List = text.lower().split()
         return word_list
